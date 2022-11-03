@@ -19,9 +19,9 @@ $(OFILES):	$(CFILES)
 	cc -c $(FLAGS) $(CFILES)
 
 clean:
-	rm $(OFILES)
+	rm -f $(OFILES)
 
 fclean: clean
-	rm $(NAME)
+	rm -f $(NAME)
 
 re: fclean all
